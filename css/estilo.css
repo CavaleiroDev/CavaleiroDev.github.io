@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Stack+Sans+Text:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.titan-one-regular {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color:rgb(255, 255, 255);
+    color: rgb(30, 30, 30);
+    font-size:18px;
+    font-family: "Stack Sans Text";
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+p, ul, ol {
+    margin-left: 17%;
+    margin-right: 16%;
+}
+
+h1 {
+    margin-left: 20%;
+    color:rgb(30, 30, 30)
+}
+
+h2{
+    margin-left: 16%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width:  350px;
+    border-radius: 30px;
+    box-shadow: 10px 15px;
+}
+
+li::marker {
+    color: #eb7f2d;
+}
+
+
+a {
+    color: #4ac1d9;
+}
+
+
+.content {
+    margin-left: 0%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.content b{ /* não está funcionando como esperado */
+    margin-top: 50px;
+    margin-bottom: 50%;
+    margin-left: 50px;
+    color: red
+}
+
+#footer {
+    background-color: #0f2b5e;
+    background-size: 10%;
+    padding: 1px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#intro{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#top-bar{
+    background-color: #0f2b5e;
+    background-size: 10%;
+    padding: 1px;
+    margin-bottom: 5px;
+    /* margin-top: -60px;
+    margin-left: -10px;
+    margin-right: -10px; */
+}
+
+#top-bar button{ /* nao usado */
+    color: red;
+}
+
+#titulo{
+    font-size: 60px;
+    color: white;
+    font-family: "Ubuntu";/*"Press Start 2P";*/
+    text-align: center;
+}
+
+/* Sidebar */
+
+.sidebar {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2062DB;
+    overflow-x: hidden;
+    padding-top: 60px;
+    
+    width: 0;
+    transition: 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar a {font-size: 18px;}
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #316dde;
+}
+
+#sidebar-closebtn{
+    position: absolute;
+    top: 10px;
+    right:20px;
+    font-size: 30px;
+}
+
+#sidebar-openbtn{
+    font-size: 20px;
+    background-color: #2062DB;
+    color: white;
+    padding: 13px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+#sidebar-openbtn:hover {
+    background-color: #316dde;
+}
+
+#main {
+    transition: margin-left 0.3s;
+    padding: 20px;
+    margin-left: 0px;
+}
